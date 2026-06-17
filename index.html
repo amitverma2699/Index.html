@@ -23,6 +23,18 @@
             height: 2px;
             background: #3b82f6;
         }
+                .animate-marquee {
+            animation: marquee 35s linear infinite;
+        }
+        
+        @keyframes marquee {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+        }
+        
+        .animate-marquee:hover {
+            animation-play-state: paused;
+        }
         .footer-link { transition: all 0.2s ease; }
         .footer-link:hover { color: #60a5fa; transform: translateX(4px); }
     </style>
@@ -353,6 +365,69 @@
                             <i class="fas fa-arrow-trend-up"></i>
                             4x Growth in just 30 days
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Testimonials -->
+    <section class="py-24 bg-black overflow-hidden">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <h2 class="heading text-5xl font-semibold tracking-tighter text-center mb-16">What Our Clients Say</h2>
+            
+            <!-- Scrolling Testimonials -->
+            <div class="relative">
+                <div class="flex gap-8 animate-marquee whitespace-nowrap">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-zinc-900 min-w-[380px] rounded-3xl p-8">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-purple-500 rounded-2xl flex items-center justify-center text-xl">🦷</div>
+                            <div>
+                                <div class="font-semibold">Dr. Priya Sharma</div>
+                                <div class="text-sm text-zinc-400">SmileCare Dental Clinic, Pune</div>
+                            </div>
+                        </div>
+                        <p class="text-zinc-300 italic">"Within 30 days, we went from 8 appointments to 45 per month. The WhatsApp automation is a game changer. Best investment we've made for our clinic."</p>
+                        <div class="mt-6 text-emerald-400 text-sm">★★★★★</div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="bg-zinc-900 min-w-[380px] rounded-3xl p-8">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl flex items-center justify-center text-xl">🏠</div>
+                            <div>
+                                <div class="font-semibold">Rohan Mehta</div>
+                                <div class="text-sm text-zinc-400">Mehta Real Estate, Mumbai</div>
+                            </div>
+                        </div>
+                        <p class="text-zinc-300 italic">"Amit's team transformed our lead flow completely. We now get 15+ site visits every week with almost zero manual follow-up. Highly recommended!"</p>
+                        <div class="mt-6 text-emerald-400 text-sm">★★★★★</div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="bg-zinc-900 min-w-[380px] rounded-3xl p-8">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-12 h-12 bg-gradient-to-br from-green-400 to-teal-500 rounded-2xl flex items-center justify-center text-xl">☀️</div>
+                            <div>
+                                <div class="font-semibold">Vikas Patil</div>
+                                <div class="text-sm text-zinc-400">SunPower Solar Solutions</div>
+                            </div>
+                        </div>
+                        <p class="text-zinc-300 italic">"The AI system books appointments automatically. Our conversion rate jumped from 12% to 48%. Best growth partner we've worked with."</p>
+                        <div class="mt-6 text-emerald-400 text-sm">★★★★★</div>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div class="bg-zinc-900 min-w-[380px] rounded-3xl p-8">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-12 h-12 bg-gradient-to-br from-purple-400 to-pink-500 rounded-2xl flex items-center justify-center text-xl">📚</div>
+                            <div>
+                                <div class="font-semibold">Neha Kapoor</div>
+                                <div class="text-sm text-zinc-400">Kapoor Coaching Institute</div>
+                            </div>
+                        </div>
+                        <p class="text-zinc-300 italic">"Leads are now automatically qualified and appointments booked via WhatsApp. We saved 4 hours daily and doubled our enrollments."</p>
+                        <div class="mt-6 text-emerald-400 text-sm">★★★★★</div>
                     </div>
                 </div>
             </div>
