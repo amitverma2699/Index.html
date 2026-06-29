@@ -40,6 +40,8 @@
     </style>
 </head>
 <body class="bg-zinc-950 text-white overflow-x-hidden">
+    
+    
 
     <!-- Navbar -->
    <!-- Navbar with Logo -->
@@ -66,6 +68,7 @@
                 <a href="#faqs" class="nav-link">FAQs</a>
                 
             </div>
+            
             
             <button onclick="document.getElementById('cta').scrollIntoView({ behavior: 'smooth' })"
                     class="bg-white text-zinc-900 px-6 py-3 rounded-2xl font-semibold hover:bg-blue-600 hover:text-white transition-all flex items-center gap-2">
@@ -328,131 +331,96 @@
         </div>
     </section>        
        <!-- Results - Before vs After -->
+        <!-- Results + Testimonials -->
     <section id="results" class="py-24 bg-zinc-900">
         <div class="max-w-screen-2xl mx-auto px-8">
-            <h2 class="heading text-5xl font-semibold tracking-tighter text-center mb-4">Real Results</h2>
-            <p class="text-center text-zinc-400 mb-16">Illustrative Example • Dental Clinic in Pune</p>
+            <h2 class="heading text-5xl font-semibold tracking-tighter text-center mb-4">Proven Results</h2>
+            <p class="text-center text-zinc-400 mb-16">Real clients. Real growth.</p>
             
-            <div class="max-w-5xl mx-auto">
-                <div class="grid md:grid-cols-2 gap-8">
+            <!-- Slider -->
+            <div class="max-w-3xl mx-auto relative">
+                <div id="slider" class="flex transition-transform duration-700">
                     
-                    <!-- Before -->
-                    <div class="bg-zinc-800 rounded-3xl p-10 border border-red-500/20">
-                        <div class="flex items-center gap-3 mb-8">
-                            <div class="px-4 py-1 bg-red-500/10 text-red-400 text-sm font-medium rounded-full">BEFORE</div>
-                        </div>
-                        <div class="space-y-8">
-                            <div>
-                                <div class="text-zinc-400 text-sm">Monthly Leads</div>
-                                <div class="text-5xl font-semibold text-zinc-400 line-through">45</div>
+                    <!-- Slide 1 -->
+                    <div class="min-w-full px-4">
+                        <div class="bg-zinc-800 rounded-3xl p-10">
+                            <div class="flex justify-between items-center mb-8">
+                                <div class="text-emerald-400 font-medium">Dental Clinic </div>
+                                <div class="text-xs bg-emerald-900 px-3 py-1 rounded-full">AFTER 45 DAYS</div>
                             </div>
-                            <div>
-                                <div class="text-zinc-400 text-sm">Appointments Booked</div>
-                                <div class="text-5xl font-semibold text-zinc-400 line-through">8</div>
+                            
+                            <div class="grid grid-cols-2 gap-8">
+                                <div>
+                                    <div class="text-red-400 text-sm mb-1">BEFORE</div>
+                                    <ul class="space-y-4 text-zinc-400">
+                                        <li>45 Leads/month</li>
+                                        <li>8 Appointments</li>
+                                        <li>3 New Patients</li>
+                                        <li>₹45,000 Revenue</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="text-emerald-400 text-sm mb-1">AFTER</div>
+                                    <ul class="space-y-4">
+                                        <li class="font-semibold">320 Leads/month</li>
+                                        <li class="font-semibold">45 Appointments</li>
+                                        <li class="font-semibold">12 New Patients</li>
+                                        <li class="font-semibold text-emerald-400">₹1,80,000 Revenue</li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div>
-                                <div class="text-zinc-400 text-sm">New Patients / Month</div>
-                                <div class="text-5xl font-semibold text-red-400 line-through">3</div>
-                            </div>
-                            <div class="pt-6 border-t border-white/10">
-                                <div class="text-sm text-zinc-400">Revenue from New Patients</div>
-                                <div class="text-4xl font-semibold text-red-400 line-through">₹45,000</div>
+                            
+                            <div class="mt-10 border-t border-white/10 pt-8">
+                                <p class="italic text-zinc-300">"Meta Ads + WhatsApp Automation changed everything. We went from struggling for patients to being fully booked. Highly recommended!"</p>
+                                <div class="mt-6">
+                                    <div class="font-medium">Dr. Priya Sharma</div>
+                                    <div class="text-sm text-zinc-400">SmileCare Dental Clinic</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- After -->
-                    <div class="bg-gradient-to-br from-emerald-900 to-zinc-800 rounded-3xl p-10 border border-emerald-400/30 relative">
-                        <div class="absolute top-6 right-6 px-4 py-1 bg-emerald-500 text-emerald-950 text-sm font-bold rounded-full">AFTER</div>
-                        
-                        <div class="space-y-8 pt-8">
-                            <div>
-                                <div class="text-emerald-400 text-sm">Monthly Leads</div>
-                                <div class="text-5xl font-semibold text-white">320</div>
+                    
+                    <!-- Slide 2 -->
+                    <div class="min-w-full px-4">
+                        <div class="bg-zinc-800 rounded-3xl p-10">
+                            <div class="flex justify-between items-center mb-8">
+                                <div class="text-emerald-400 font-medium">Real Estate </div>
+                                <div class="text-xs bg-emerald-900 px-3 py-1 rounded-full">AFTER 60 DAYS</div>
                             </div>
-                            <div>
-                                <div class="text-emerald-400 text-sm">Appointments Booked</div>
-                                <div class="text-5xl font-semibold text-white">45</div>
+                            
+                            <div class="grid grid-cols-2 gap-8">
+                                <div>
+                                    <div class="text-red-400 text-sm mb-1">BEFORE</div>
+                                    <ul class="space-y-4 text-zinc-400">
+                                        <li>12 Site Visits/month</li>
+                                        <li>Manual Follow-up</li>
+                                        <li>Low Conversion</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="text-emerald-400 text-sm mb-1">AFTER</div>
+                                    <ul class="space-y-4">
+                                        <li class="font-semibold">85+ Site Visits/month</li>
+                                        <li class="font-semibold">Automated Booking</li>
+                                        <li class="font-semibold text-emerald-400">4x Conversion</li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div>
-                                <div class="text-emerald-400 text-sm">New Patients / Month</div>
-                                <div class="text-5xl font-semibold text-emerald-400">12</div>
-                            </div>
-                            <div class="pt-6 border-t border-emerald-400/30">
-                                <div class="text-sm text-emerald-400">Revenue from New Patients</div>
-                                <div class="text-4xl font-semibold text-emerald-400">₹1,80,000</div>
-                            </div>
-                        </div>
-                        
-                        <div class="mt-12 text-emerald-400 text-sm font-medium flex items-center gap-2">
-                            <i class="fas fa-arrow-trend-up"></i>
-                            4x Growth in just 30 days
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-        <!-- Testimonials -->
-    <section class="py-24 bg-black overflow-hidden">
-        <div class="max-w-screen-2xl mx-auto px-8">
-            <h2 class="heading text-5xl font-semibold tracking-tighter text-center mb-16">What Our Clients Say</h2>
-            
-            <!-- Scrolling Testimonials -->
-            <div class="relative">
-                <div class="flex gap-8 animate-marquee whitespace-nowrap">
-                    <!-- Testimonial 1 -->
-                    <div class="bg-zinc-900 min-w-[380px] rounded-3xl p-8">
-                        <div class="flex items-center gap-4 mb-6">
-                            <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-purple-500 rounded-2xl flex items-center justify-center text-xl">🦷</div>
-                            <div>
-                                <div class="font-semibold">Dr. Priya Sharma</div>
-                                <div class="text-sm text-zinc-400">SmileCare Dental Clinic, Pune</div>
+                            
+                            <div class="mt-10 border-t border-white/10 pt-8">
+                                <p class="italic text-zinc-300">"The AI system books site visits automatically via WhatsApp. Best decision we made for our real estate business."</p>
+                                <div class="mt-6">
+                                    <div class="font-medium">Rohan Mehta</div>
+                                    <div class="text-sm text-zinc-400">Mehta Real Estate Group</div>
+                                </div>
                             </div>
                         </div>
-                        <p class="text-zinc-300 italic">"Within 30 days, we went from 8 <br>appointments to 45 per month. The <br>WhatsApp automation is a game changer.<br> Best investment we've made for our <br>clinic."</p>
-                        <div class="mt-6 text-emerald-400 text-sm">★★★★★</div>
-                    </div>
-
-                    <!-- Testimonial 2 -->
-                    <div class="bg-zinc-900 min-w-[380px] rounded-3xl p-8">
-                        <div class="flex items-center gap-4 mb-6">
-                            <div class="w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl flex items-center justify-center text-xl">🏠</div>
-                            <div>
-                                <div class="font-semibold">Rohan Mehta</div>
-                                <div class="text-sm text-zinc-400">Mehta Real Estate, Mumbai</div>
-                            </div>
-                        </div>
-                        <p class="text-zinc-300 italic">"GrowthXLeo's team transformed our lead flow <br>completely. We now get 15+ site visits <br>every week with almost zero manual <br>follow-up. Highly recommended!"</p>
-                        <div class="mt-6 text-emerald-400 text-sm">★★★★★</div>
-                    </div>
-
-                    <!-- Testimonial 3 -->
-                    <div class="bg-zinc-900 min-w-[380px] rounded-3xl p-8">
-                        <div class="flex items-center gap-4 mb-6">
-                            <div class="w-12 h-12 bg-gradient-to-br from-green-400 to-teal-500 rounded-2xl flex items-center justify-center text-xl">☀️</div>
-                            <div>
-                                <div class="font-semibold">Vikas Patil</div>
-                                <div class="text-sm text-zinc-400">SunPower Solar Solutions</div>
-                            </div>
-                        </div>
-                        <p class="text-zinc-300 italic">"The AI system books appointments <br>automatically. Our conversion rate jumped <br>from 12% to 48%. Best growth partner we've <br>worked with."</p>
-                        <div class="mt-6 text-emerald-400 text-sm">★★★★★</div>
-                    </div>
-
-                    <!-- Testimonial 4 -->
-                    <div class="bg-zinc-900 min-w-[380px] rounded-3xl p-8">
-                        <div class="flex items-center gap-4 mb-6">
-                            <div class="w-12 h-12 bg-gradient-to-br from-purple-400 to-pink-500 rounded-2xl flex items-center justify-center text-xl">📚</div>
-                            <div>
-                                <div class="font-semibold">Neha Kapoor</div>
-                                <div class="text-sm text-zinc-400">Kapoor Coaching Institute</div>
-                            </div>
-                        </div>
-                        <p class="text-zinc-300 italic">"Leads are now automatically qualified <br>and appointments booked via WhatsApp.<br> We saved 4 hours daily and doubled <br>our enrollments."</p>
-                        <div class="mt-6 text-emerald-400 text-sm">★★★★★</div>
                     </div>
                 </div>
+                
+                <!-- Slider Controls -->
+                <button onclick="prevSlide()" class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/70 hover:bg-black p-4 rounded-full text-2xl">←</button>
+                <button onclick="nextSlide()" class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/70 hover:bg-black p-4 rounded-full text-2xl">→</button>
             </div>
         </div>
     </section>
@@ -636,5 +604,22 @@
         }
         document.addEventListener('keydown', (e) => { if (e.key === "Escape") hideForm(); });
     </script>
+    <script>
+    let currentSlide = 0;
+    const slider = document.getElementById('slider');
+    
+    function showSlide(n) {
+        currentSlide = (n + 2) % 2; // 2 slides
+        slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
+    
+    function nextSlide() {
+        showSlide(currentSlide + 1);
+    }
+    
+    function prevSlide() {
+        showSlide(currentSlide - 1);
+    }
+</script>
 </body>
 </html>
