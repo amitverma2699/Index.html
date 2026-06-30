@@ -42,23 +42,33 @@
             transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
         }
         
-        .dark body {
-            background-color: #09090b;
+        :root {
+                --nav-bg: rgba(255,255,255,0.92);
+                --nav-border: #d4d4d8;
         }
+
+        html.dark {
+                --nav-bg: rgba(9,9,11,0.92);
+                --nav-border: #3f3f46;
+        }
+
         nav {
             background: var(--nav-bg) !important;
-             border-color: var(--nav-border) !important;
-            }
+            border-color: var(--nav-border) !important;
+        }
 
         nav a,
         nav span {
-                color: var(--text-main) !important;
-                    }
+            color: var(--text-main) !important;
+        }
 
         nav .text-zinc-400 {
             color: var(--text-muted) !important;
         }
-        .bg-zinc-950\/90 { background: var(--nav-bg) !important; }
+
+        #theme-toggle:hover {
+            background: var(--bg-card) !important;
+        }
     </style>
 </head>
 <body class="bg-zinc-950 text-white overflow-x-hidden">
@@ -67,7 +77,7 @@
 
     <!-- Navbar -->
    <!-- Navbar with Logo -->
-   <nav class="fixed top-0 left-0 right-0 z-50 bg-zinc-950/90 backdrop-blur-lg border-b border-zinc-800">
+   <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-lg border-b">
         <div class="max-w-screen-2xl mx-auto px-8 py-5 flex justify-between items-center">
             <div class="flex items-center gap-3">
                 <!-- Your New Logo -->
